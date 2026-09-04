@@ -1,0 +1,124 @@
+{
+  "controls": {
+    "interval_tie_order": {
+      "instances_where_tie_order_changes_the_answer": 15103,
+      "mean_square_feet_overstated_when_it_differs": 27.45,
+      "share": 0.7551,
+      "trials": 20000
+    },
+    "longitude_scaling": {
+      "correct_index_queries_wrong": 0,
+      "flat_degree_index_queries_wrong": 290,
+      "flat_degree_listings_silently_dropped": 25456,
+      "listings": 8000,
+      "longitude_miles_per_degree_at_lehi": 52.55,
+      "queries": 1200,
+      "share_of_results_lost": 0.0309,
+      "true_results_total": 823410
+    }
+  },
+  "funnel": {
+    "accept_rate": 0.2267,
+    "accepted": 544,
+    "area_ok_but_no_placement": 1382,
+    "decisions_per_second": 646.7,
+    "listings": 60,
+    "placement_rejections_a_repack_would_have_saved": 243,
+    "rejected_at_area": 292,
+    "rejected_at_dimensions": 182,
+    "rejected_at_placement": 1382,
+    "repack_recovery_rate": 0.1758,
+    "requests": 2400,
+    "seconds": 3.71,
+    "seed": 1,
+    "share_of_rejections_that_are_geometric": 0.7446
+  },
+  "generated_by": "python -m stowline.experiments <section>",
+  "oracle": {
+    "agree": 360,
+    "fast_path_found_what_oracle_could_not": 0,
+    "fast_path_missed_a_real_solution": 24,
+    "mean_nodes_exhaustive": 29943.4,
+    "mean_nodes_fast": 11.9,
+    "miss_rate": 0.0625,
+    "node_ratio": 2520.0,
+    "resolved": 384,
+    "seconds": 14.57,
+    "seed": 2,
+    "trials": 400,
+    "undecided_within_budget": 16
+  },
+  "pricing": {
+    "best_exponent": "-0.05",
+    "global_median_baseline_mape": 0.2468,
+    "improvement_vs_baseline": 0.4793,
+    "listings": 1200,
+    "mape_by_size_exponent": {
+      "-0.05": 0.1285,
+      "-0.10": 0.1287,
+      "-0.15": 0.1422,
+      "-0.20": 0.1616,
+      "-0.30": 0.2103,
+      "0.00": 0.1378
+    },
+    "model_mape": 0.1285,
+    "seed": 5,
+    "targets_scored": 347,
+    "targets_skipped_thin_comps": 53
+  },
+  "search_bench": {
+    "best_cell_deg": "cell_0.01",
+    "brute_force_queries_per_second": 97.9,
+    "by_cell_size": {
+      "cell_0.01": {
+        "mean_candidates_examined": 882.6,
+        "mean_hits": 601.4,
+        "queries_per_second": 1656.3,
+        "seconds": 0.483
+      },
+      "cell_0.02": {
+        "mean_candidates_examined": 1068.8,
+        "mean_hits": 620.1,
+        "queries_per_second": 1565.6,
+        "seconds": 0.511
+      },
+      "cell_0.05": {
+        "mean_candidates_examined": 1353.8,
+        "mean_hits": 601.3,
+        "queries_per_second": 1282.1,
+        "seconds": 0.624
+      },
+      "cell_0.1": {
+        "mean_candidates_examined": 2751.3,
+        "mean_hits": 667.3,
+        "queries_per_second": 648.8,
+        "seconds": 1.233
+      },
+      "cell_0.25": {
+        "mean_candidates_examined": 8601.2,
+        "mean_hits": 613.3,
+        "queries_per_second": 210.4,
+        "seconds": 3.803
+      }
+    },
+    "listings": 20000,
+    "queries": 800,
+    "seed": 3,
+    "speedup_over_brute_force": 16.9
+  },
+  "search_exactness": {
+    "listings": 6000,
+    "queries": 1500,
+    "queries_disagreeing_with_brute_force": 0,
+    "seed": 4
+  },
+  "throughput": {
+    "accepted": 3014,
+    "decisions": 4000,
+    "decisions_per_second": 37383.2,
+    "existing_reservations_on_listing": 6,
+    "mean_microseconds_per_decision": 26.7,
+    "seconds": 0.107,
+    "seed": 6
+  }
+}
